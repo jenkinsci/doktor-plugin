@@ -20,7 +20,7 @@ constructor(
 	val name: String,
 	val url: String,
 	val space: String,
-	val credentials: String
+	val credentials: String?
 ) : AbstractDescribableImpl<ConfluenceServer>() {
 	@Extension
 	class ConfluenceServerDescriptor : Descriptor<ConfluenceServer>() {

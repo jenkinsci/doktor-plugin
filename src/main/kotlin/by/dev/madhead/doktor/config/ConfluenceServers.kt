@@ -55,7 +55,7 @@ class ConfluenceServers : GlobalConfiguration() {
 						ACL.SYSTEM,
 						emptyList()
 					),
-					CredentialsMatchers.withId(confluenceServer.credentials)
+					CredentialsMatchers.withId(confluenceServer.credentials!!)
 				) ?: throw AbortException(Messages.doktor_hudson_AbortException_unknownCredentials())
 			} else {
 				null
